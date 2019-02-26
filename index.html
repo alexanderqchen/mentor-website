@@ -1,0 +1,109 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Mentor</title>
+		<style>
+			html, body {
+				margin: 0;
+				padding: 0;
+				background-color: #D0C8AD;
+				font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+			}
+			.graphic-container {
+				display: flex;
+			}
+			.graphic-child {
+				flex-grow: 1;
+				text-align: center;
+				padding-top: 30px;
+			}
+			.graphic-child img {
+				height: 15vw;
+			}
+			.outline {
+				border-left: 1px solid black;
+				border-right: 1px solid black;
+			}
+
+			#main-section {
+				padding: 50px 100px;
+				display: flex;
+			}
+			#main-section h1 {
+				font-size: 100px;
+				margin: 0;
+			}
+			#main-section h2 {
+				margin: 0;
+			}
+
+			#text {
+				margin-top: 150px;
+				flex-grow: 1;
+			}
+			#terminal {
+				background-image: url("images/terminal.svg");
+				background-size: cover;
+				height: 480px;
+				width: 500px;
+				flex-grow: 1;
+			}
+			#terminal h3 {
+				color: green;
+			}
+			#terminal p {
+				color: green;
+			}
+
+			#text-wrapper {
+				padding: 100px 50px;
+				font-family: 'Courier New', Courier, monospace;
+			}
+
+			#logo {
+				position: absolute;
+				top: 20px;
+				left: 20px;
+				height: 100px;
+				width: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<img src="images/logo.svg" id="logo">
+		<div id="main-section">
+			<div id="text">
+				<h1 id="title">Mentor</h1>
+				<h2 id="subtitle">An Agile Educational Way to Program</h2>
+			</div>
+
+			<div id="terminal">
+				<div id="text-wrapper">
+					<h3>$ Learning a new syntax?</h3>
+					<p>-- Use our special inline characters to write in a familiar language</p>
+
+					<h3>$ Directly save to file from iPad!</h3>
+					<p>-- Data persists on Firebase</p>
+
+					<h3>$ Learn new syntax with the iPad Companion App</h3>
+					<p>-- Uses context-free grammars to translate between languages</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="graphic-container">
+			<div class="graphic-child">
+				<img src="images/suggestions.svg">
+				<h3>Smart Code Suggestions</h3>
+			</div>
+			<div class="graphic-child outline">
+				<img src="images/ipad.svg">
+				<h3>Developer Companion App</h3>
+			</div>
+			<div class="graphic-child">
+				<img src="images/replacement.svg">
+				<h3>Automated Code Replacement</h3>
+			</div>
+		</div>
+	</body>
+</html>
